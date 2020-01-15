@@ -1,0 +1,37 @@
+{
+  "name": "code-test",
+  "version": "1.0.0",
+  "description": "Your mission, if you choose to accept it is to implement a scraper for MEPs (Members of the European Parliament).",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test ava"
+  },
+  "author": "Karl Laurentius Roos",
+  "engines": {
+    "node": ">=9"
+  },
+  "ava": {
+    "require": [
+      "@babel/register",
+      "@babel/polyfill"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.19.1",
+    "cheerio": "^1.0.0-rc.3",
+    "cross-env": "^6.0.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/register": "^7.7.7",
+    "ava": "^2.4.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.4.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "license": "ISC"
+}
